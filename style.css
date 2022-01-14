@@ -1,0 +1,165 @@
+/*настройка*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style-type: none;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    background: #fd722d;
+    width: 100%;
+    height: 50px;
+}
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 20px;
+}
+.search {
+    display: flex;
+    align-items: center;
+}
+.button_menu {
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+.search input {
+    height: 30px;
+    border: none;
+    padding-left: 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+}
+.search button {
+    height: 32px;
+    width: 70px;
+    border: none;
+    cursor: pointer;
+}
+.button_menu p {
+    padding: 5px 20px;
+    font-weight: 800;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #363131;
+    text-align: center;
+}
+nav ul li {
+    border: #fff 1px solid;
+}
+nav ul li a {
+    display: block;
+    padding: 20px;
+}
+nav ul li:hover {
+    transition: 0.5s;
+    background: #fff;
+}
+nav ul li:hover a {
+    color: #333;
+}
+.button_menu:hover nav ul {
+    display:inline-block;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background: #333;
+}
+
+.container {
+    min-width: 220px;
+    width: 50%;
+    margin: 50px auto 100px;
+    padding: 10px;
+    background: #989d97;
+    color: #fff;
+    border-radius: 10px;
+}
+.container img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.content2 img {
+    height: 120px;
+}
+
+
+
+
+footer {
+    height: 50px;
+    width: 100%;
+    background: #b9643f;
+    margin-top: -50px;
+}
+
+
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container img {
+        float: none;
+        margin: 0;
+    }
+    .content__info {
+        text-align: center;
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    .search input {
+        width: 150px;
+    }
+    .search button {
+        width: 50px;
+        height: 30px;
+    }
+}
+@media (max-width: 370px) {
+    .search input {
+        width: 100px;
+    }
+    .search button {
+        width: 50px;
+        height: 30px;
+    }
+}
